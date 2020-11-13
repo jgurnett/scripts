@@ -1,7 +1,7 @@
-#Clam Scan
+# Clam Scan
 Script I use to scan my servers for viruses
 <br />
-[a link](https://www.clamav.net/documents/clam-antivirus-user-manual)
+[Documentation](https://www.clamav.net/documents/clam-antivirus-user-manual)
 
 ## clamAV-Script.sh
 ### Usage
