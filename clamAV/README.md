@@ -7,6 +7,5 @@ Script I use to scan my servers for viruses
 ### Usage
 * `chmod +x clamAV-Script.sh`
 * `./clamAV-Script.sh`
-<br />
-- I run unrar with the below crontab to run everyday at 8PM<br />
+* I run unrar with the below crontab to run everyday at 8PM <br />
 `0 16 * * * /home/joel/Desktop/converter-extractor/unrar.py`
