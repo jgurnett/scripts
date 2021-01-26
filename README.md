@@ -8,5 +8,8 @@ Script to run and update ClamScan
 Scripts I use to install programs on a fresh machine
 * Arch
 
+## owncloud
+Updates Owncloud server on debian based systems (raspbian)
+
 ## plex
 Updates PMS for ubuntu 64bit
