@@ -8,27 +8,29 @@ import subprocess
 servers = {
     'minecraft': '192.168.1.**',
     'owncloud': '192.168.1.**',
-    'vpn': '192.168.1.**'
+    'vpn': '192.168.1.**',
 }
+
+fileName = "<path to log file>"
 
 
 def emailAlreadySent(ip):
-    with open("emailAlreadySent", "r") as file:
+    with open(fileName, "r") as file:
         if ip in file.read():
             return True
         return False
 
 
 def addToList(ip):
-    f = open("emailAlreadySent", "a")
+    f = open(fileName, "a")
     f.write('{}\n'.format(ip))
     f.close()
 
 
 def removeFromList(ip):
-    with open("emailAlreadySent", "r") as f:
+    with open(fileName, "r") as f:
         lines = f.readlines()
-    with open("emailAlreadySent", "w") as f:
+    with open(fileName, "w") as f:
         for line in lines:
             if line.strip("\n") != ip:
                 f.write(line)
